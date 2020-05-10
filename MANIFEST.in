@@ -1,0 +1,16 @@
+exclude compile.py
+recursive-include scripts/ *.py
+include scripts/api_elec_battery.py
+include scripts/elec_cell_simple.py
+include scripts/elec_cell_complex.py
+include scripts/elec_battery_simple.py
+include scripts/elec_battery_complex.py
+include scripts/elec_module.py
+include powerpack/models/electrical_battery.py
+include powerpack/models/electrical_cell.py
+include powerpack/models/workflows/workflow_battery.py
+exclude powerpack/tools.py
+recursive-exclude powerpack/optimization/ *protected.py
+global-exclude *_protected.pyx
+prune .git
+prune doc
